@@ -1,0 +1,29 @@
+<script>
+  // Set your event date here (format: YYYY-MM-DD HH:MM:SS)
+  const eventDate = new Date("2026-03-15 18:00:00").getTime();
+
+  const daysEl = document.getElementById("cd-days");
+  const hoursEl = document.getElementById("cd-hours");
+  const minsEl = document.getElementById("cd-mins");
+  const secsEl = document.getElementById("cd-secs");
+
+  function updateCountdown() {
+    const now = new Date().getTime();
+    const diff = eventDate - now;
+
+    if (diff <= 0) return; // stop when countdown ends
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+    daysEl.innerText = String(days).padStart(2, "0");
+    hoursEl.innerText = String(hours).padStart(2, "0");
+    minsEl.innerText = String(mins).padStart(2, "0");
+    secsEl.innerText = String(secs).padStart(2, "0");
+  }
+
+  setInterval(updateCountdown, 1000);
+  updateCountdown(); // initial call
+    </script>
