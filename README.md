@@ -156,7 +156,7 @@ font-size:14px;
 
 <section class="section">
 <div class="container host">
-<img src="olayinka.jpg" alt="Olayinka Ashaye">
+<img src="IMG_20260301_001429_142.jpg" alt="Olayinka Ashaye">
 
 <div>
 <h2>Meet Your Host</h2>
