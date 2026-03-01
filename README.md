@@ -59,7 +59,7 @@
 
   </section>  <!-- HOST -->  <div class="host-section reveal">
     <div class="host-img-wrap">
-      <img src="ola" alt="Olayinka Ashaye" class="host-img" />
+      <img src="IMG_20260301_001429_142.jpg" alt="Olayinka Ashaye" class="host-img" />
     </div>
     <div class="host-info">
       <p class="host-label">Your Host</p>
